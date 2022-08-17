@@ -153,7 +153,6 @@ button:hover{
   left: 0;
   background: rgb(40, 44, 52);
   overflow: hidden;
-  z-index: -1;
 }
 
 .bubbles span {

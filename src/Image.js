@@ -28,7 +28,7 @@ const Image = {
     27:require('./characters/Apple Stars.png'),
     28:require('./characters/Apple Strudel.png'),
     29:require('./characters/Applebloom (human).png'),
-    30:require('./characters/Applejack (png).png'),
+    30:require('./characters/Applejack (human).png'),
     31:require('./characters/Applejack.png'),
     32:require('./characters/Appleloosa deputies.png'),
     33:require('./characters/Applesauce.png'),
