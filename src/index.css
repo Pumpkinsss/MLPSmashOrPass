@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  background-color: #282c34;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +10,252 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.title{
+  color:white;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.title #head{
+  font-size: 40px;
+  margin-bottom: -10px;
+}
+
+.title #subHead{
+  font-size: 20px;
+}
+
+.container{
+  position: absolute;
+  border: white 5px solid;
+  width: 50%;
+  margin: auto;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 600px;
+  background-color: #2b2e36c9;
+}
+
+.contents{
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imgContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height:350px;
+}
+
+#character{
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  max-width: 200px;
+  max-height:300px;
+}
+
+#startBut{
+  z-index: 1;
+}
+
+.resetContainer{
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-top: 30vh;
+}
+
+#resetBut{
+  position: relative;
+}
+
+#startBut{
+  position: relative;
+  margin: auto;
+  width: 50%;
+}
+
+.buttonsCont{
+  display: fixed;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  position: relative;
+}
+
+button{
+  display:absolute;
+}
+
+button:hover{
+  filter: brightness(0.6);
+}
+
+.passedCounter{
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  margin: auto;
+  width: 100px;
+  top: 50%;
+  left: -50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.passedCounter #title{
+  color: rgb(240,100,20);
+  margin-bottom: -20px;
+}
+
+.smashedCounter{
+  color: white;
+  font-size: 25px;
+  position: fixed;
+  width: 100px;
+  margin: auto;
+  top: 50%;
+  right: -50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.smashedCounter #title{
+  color: rgb(100,240,20);
+  margin-bottom: -20px;
+}
+
+.errorMsg{
+  position: relative;
+  top: 90%;
+}
+
+@keyframes move {
+  100% {
+      transform: translate3d(0, 0, 1px) rotate(360deg);
+  }
+}
+
+.bubbles {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgb(40, 44, 52);
+  overflow: hidden;
+  z-index: -1;
+}
+
+.bubbles span {
+  width: 13vmin;
+  height: 13vmin;
+  border-radius: 13vmin;
+  backface-visibility: hidden;
+  position: absolute;
+  animation: move;
+  animation-duration: 40;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+.bubbles span:nth-child(0) {
+  color: #ab4f6a;
+  top: 33%;
+  left: 96%;
+  animation-duration: 94s;
+  animation-delay: -99s;
+  transform-origin: 8vw -4vh;
+  box-shadow: 26vmin 0 3.5854311699021997vmin currentColor;
+}
+.bubbles span:nth-child(1) {
+  color: #c17bb8;
+  top: 64%;
+  left: 12%;
+  animation-duration: 82s;
+  animation-delay: -77s;
+  transform-origin: -16vw -7vh;
+  box-shadow: 26vmin 0 4.161567041100624vmin currentColor;
+}
+.bubbles span:nth-child(2) {
+  color: #ab4f6a;
+  top: 84%;
+  left: 43%;
+  animation-duration: 81s;
+  animation-delay: -30s;
+  transform-origin: 11vw 18vh;
+  box-shadow: 26vmin 0 3.2658188839254447vmin currentColor;
+}
+.bubbles span:nth-child(3) {
+  color: #c17bb8;
+  top: 57%;
+  left: 9%;
+  animation-duration: 82s;
+  animation-delay: -8s;
+  transform-origin: 23vw 14vh;
+  box-shadow: 26vmin 0 3.5590907926064275vmin currentColor;
+}
+.bubbles span:nth-child(4) {
+  color: #ab4f6a;
+  top: 68%;
+  left: 9%;
+  animation-duration: 75s;
+  animation-delay: -5s;
+  transform-origin: 22vw -14vh;
+  box-shadow: -26vmin 0 3.2750611017441047vmin currentColor;
+}
+.bubbles span:nth-child(5) {
+  color: #ab4f6a;
+  top: 28%;
+  left: 16%;
+  animation-duration: 96s;
+  animation-delay: -8s;
+  transform-origin: 5vw -14vh;
+  box-shadow: -26vmin 0 3.4738013245159065vmin currentColor;
+}
+.bubbles span:nth-child(6) {
+  color: #c17bb8;
+  top: 59%;
+  left: 93%;
+  animation-duration: 84s;
+  animation-delay: -17s;
+  transform-origin: -13vw 9vh;
+  box-shadow: -26vmin 0 3.927587417961506vmin currentColor;
+}
+.bubbles span:nth-child(7) {
+  color: #583C87;
+  top: 49%;
+  left: 95%;
+  animation-duration: 34s;
+  animation-delay: -22s;
+  transform-origin: 23vw 14vh;
+  box-shadow: 26vmin 0 3.7519672739966006vmin currentColor;
+}
+.bubbles span:nth-child(8) {
+  color: #c17bb8;
+  top: 37%;
+  left: 82%;
+  animation-duration: 100s;
+  animation-delay: -32s;
+  transform-origin: 23vw -10vh;
+  box-shadow: 26vmin 0 4.007301505930807vmin currentColor;
+}
+.bubbles span:nth-child(9) {
+  color: #ab4f6a;
+  top: 85%;
+  left: 41%;
+  animation-duration: 98s;
+  animation-delay: -54s;
+  transform-origin: -21vw 1vh;
+  box-shadow: -26vmin 0 3.2948103672749838vmin currentColor;
 }
